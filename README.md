@@ -1,0 +1,1 @@
+# gitmanifest-registration-app
