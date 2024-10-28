@@ -11,7 +11,7 @@ pipeline {
     }
     stage("checkout from scm") {
       steps {
-        git branch: 'main', credentialsId: 'github', url:'https://github.com/nadmad1/TryregistrationApp-menifest.git'
+        git branch: 'main', credentialsId: 'GitHub', url:'https://github.com/nadmad1/TryregistrationApp-menifest.git'
       }
     }
     stage("update the Deployment Tags") {
