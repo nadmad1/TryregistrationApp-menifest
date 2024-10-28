@@ -29,7 +29,7 @@ pipeline {
             git config --global user.name "nadmad1"
             git config --global user.email "nadmad1@gmail.com"
             git add deployment.yaml
-            git commit -m "Updated Deploument Manifest"
+            git commit -m "Updated Deploument Manifest" || echo "No changes to commit"
             """
         withCredentials([gitUsernamePassword(credentialsId: 'GitHub', gitToolName: 'Default')]) {
           sh "git push https://github.com/nadmad1/TryregistrationApp-menifest.git"
