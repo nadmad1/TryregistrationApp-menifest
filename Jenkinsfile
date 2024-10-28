@@ -31,7 +31,7 @@ pipeline {
             git add deployment.yaml
             git commit -m "Updated Deploument Manifest"
             """
-        withCredentials([gitUsernamePassword(credentialsID: 'github', gitToolName: 'Default')]) {
+        withCredentials([gitUsernamePassword(credentialsID: 'GitHub', gitToolName: 'Default')]) {
           sh "git push https://github.com/nadmad1/TryregistrationApp-menifest.git"
         }
       }
